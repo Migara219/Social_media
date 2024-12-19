@@ -1,0 +1,27 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: blue;
+}
