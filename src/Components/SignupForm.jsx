@@ -17,7 +17,7 @@ function SignupForm() {
 
   return (
     <div className="form-container">
-      <h2>Sign Up</h2>
+      
       <form onSubmit={handleSubmit} className="form">
         <div className="form-group">
           <label>Email:</label>
