@@ -10,7 +10,7 @@
 }
 
 .nav-links {
-  list-style: none;
+  list-style: none;  
   display: flex;
   gap: 10px;
   margin: 0;
