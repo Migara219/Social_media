@@ -1,56 +1,36 @@
 import React, { useState } from 'react';
-import '../Components/Form.css'; 
 
-function LoginForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+function LoginForm({ setView }) {
+  const [formData, setFormData] = useState({ username: '', password: '' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError('');
-    setIsLoading(true);
-
-   
-    setTimeout(() => {
-      setIsLoading(false);
-      if (email === 'test@example.com' && password === 'password') {
-        console.log('Login successful:', { email });
-      } else {
-        setError('Invalid email or password');
-      }
-    }, 1000);
+    console.log('Login Data:', formData);
+    
+    setView('home');
   };
 
   return (
-    <div className="background">
-      <div className="shape"></div>
-      <div className="shape"></div>
+    <div className="form-container">
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <h3>Login</h3>
-        {error && <div className="error-message">{error}</div>}
-        <label>Email</label>
         <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email"
+          type="text"
+          placeholder="Username"
+          value={formData.username}
+          onChange={(e) => setFormData({ ...formData, username: e.target.value })}
           required
         />
-        <label>Password</label>
         <input
           type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Enter your password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={(e) => setFormData({ ...formData, password: e.target.value })}
           required
         />
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Loading...' : 'Login'}
-        </button>
-       
+        <button type="submit">Login</button>
       </form>
+      <button onClick={() => setView('home')}>Back</button>
     </div>
   );
 }
