@@ -1,6 +1,13 @@
+body{
+  background-image: url('https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?t=st=1735455075~exp=1735458675~hmac=a8456c2991599437bc3cad325f01b4d876c065706c7be46a3c913f15da4334d3&w=996');
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .app-container {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   
   
@@ -18,7 +25,7 @@
 .Login-signup-buttons button {
   background-color: #470e56;
   color: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 20px;
   margin: 50px;
   border: none;
   cursor: pointer;
