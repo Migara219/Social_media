@@ -10,7 +10,9 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
      
-      <img src="logo.png"/>
+     <div className="logo">
+        <img src={'logo.png'} alt="Logo" />
+      </div>
       
       {!showLogin && !showSignUp && (
         <div className="button-container">
