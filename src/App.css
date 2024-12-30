@@ -1,8 +1,17 @@
 body{
-  background-image: url('https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?t=st=1735455075~exp=1735458675~hmac=a8456c2991599437bc3cad325f01b4d876c065706c7be46a3c913f15da4334d3&w=996');
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+}
+
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 50px;
 }
 
 .app-container {
