@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   return (
     <div className="app-container">
-      <h1>Friends Like Family</h1>
+     
       <img src="logo.png"/>
       
       {!showLogin && !showSignUp && (
@@ -21,7 +21,9 @@ const App: React.FC = () => {
       )}
       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
       {showSignUp && <SignUpForm onClose={() => setShowSignUp(false)} />}
+      <h1>Friends Like Family</h1>
     </div>
+    
   );
 };
 
