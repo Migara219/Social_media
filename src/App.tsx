@@ -11,11 +11,13 @@ const App: React.FC = () => {
     <div className="app-container">
       <h1>Friends Like Family</h1>
       <img src="logo.png"/>
+      
       {!showLogin && !showSignUp && (
         <div className="button-container">
           <button onClick={() => setShowLogin(true)} className="btn">Login</button>
           <button onClick={() => setShowSignUp(true)} className="btn">Sign Up</button>
         </div>
+        
       )}
       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
       {showSignUp && <SignUpForm onClose={() => setShowSignUp(false)} />}
