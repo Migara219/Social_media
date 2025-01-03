@@ -1,27 +1,46 @@
-.app-container {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-
-}
-
-.navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
-.nav-links {
-  list-style: none;  
-  display: flex;
-  gap: 10px;
+body{
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+.logo{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  
 }
 
-.nav-link:hover {
-  color: blue;
+.app-container {
+  font-family: Arial, sans-serif;
+  
+  text-align: center;
+  
+  
+
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  
+  
 }
